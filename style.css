@@ -1,0 +1,114 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+.navbar-brand {
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+.jumbotron {
+    background-color: #fff;
+    color: #333;
+    padding: 2rem 0;
+}
+
+.container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 1rem 0;
+}
+
+/* Page-Specific Styles */
+
+/* Home Page */
+.home .jumbotron {
+    border-bottom: 1px solid #ccc;
+}
+
+/* About Page */
+.about .jumbotron {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Products Page */
+.products .jumbotron {
+    border-bottom: 1px solid #ccc;
+}
+
+.products .product-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.products .product-card img {
+    max-width: 100%;
+}
+
+/* Gallery Page */
+.gallery .jumbotron {
+    border-bottom: 1px solid #ccc;
+}
+
+.gallery .gallery-img {
+    margin-bottom: 1rem;
+}
+
+/* Contact Page */
+.contact .jumbotron {
+    border-bottom: 1px solid #ccc;
+}
+
+.contact .contact-form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.contact .contact-form input[type="text"],
+.contact .contact-form input[type="email"],
+.contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact .contact-form textarea {
+    height: 150px;
+}
+
+.contact .contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.contact .contact-form button:hover {
+    background-color: #0056b3;
+}
