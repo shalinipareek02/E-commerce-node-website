@@ -1,0 +1,49 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS S:\FSD practice\FrontEnd\E-commerce website - Node> git init
+Reinitialized existing Git repository in S:/FSD practice/FrontEnd/E-commerce website - Node/.git/
+PS S:\FSD practice\FrontEnd\E-commerce website - Node> git add README.md
+fatal: pathspec 'README.md' did not match any files
+PS S:\FSD practice\FrontEnd\E-commerce website - Node> git commit -m "first commit"
+[master (root-commit) 4954a5e] first commit
+ 22 files changed, 812 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 amchur.jpg
+ create mode 100644 chai masala.jpg
+ create mode 100644 contact.html
+ create mode 100644 corriander powder.jpg
+ create mode 100644 dry mango 2.jpg
+ create mode 100644 dry mango.jpg
+ create mode 100644 dry tomato.jpg
+ create mode 100644 gallery.html
+ create mode 100644 index.html
+ create mode 100644 login.css
+ create mode 100644 login.html
+ create mode 100644 potato chips.jpg
+ create mode 100644 products.html
+ create mode 100644 red chilli.jpg
+ create mode 100644 rice wafers.jpg
+ create mode 100644 sabudana wafers.jpg
+ create mode 100644 spices 1.jpg
+ create mode 100644 spices 2.jpg
+ create mode 100644 spices 3.jpg
+ create mode 100644 style.css
+ create mode 100644 turmeric.jpg
+PS S:\FSD practice\FrontEnd\E-commerce website - Node> git branch -M main
+PS S:\FSD practice\FrontEnd\E-commerce website - Node> git remote add origin https://github.com/shalinipareek02/E-Commerce-node-project.git
+PS S:\FSD practice\FrontEnd\E-commerce website - Node> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (24/24), done.
+Writing objects: 100% (24/24), 1.28 MiB | 181.00 KiB/s, done.
+Total 24 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/shalinipareek02/E-Commerce-node-project.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS S:\FSD practice\FrontEnd\E-commerce website - Node>

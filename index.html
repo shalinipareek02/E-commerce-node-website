@@ -3,13 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home- SSAR Spices</title>
+    <title>Home - SSAR Spices</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            background-color: #c56e1ddb;
+        }
+        .navbar-brand, .nav-link {
+            color: #f3ecec !important;
+        }
+        .jumbotron {
+            background: url('spices-2.jpg') no-repeat center center;
+            background-size: cover;
+            color: #e55959;
+        }
+        .jumbotron h1 {
+            font-size: 3em;
+            font-weight: 500;
+        }
+        .jumbotron p {
+            font-size: 1.5em;
+        }
+        .container h2 {
+            margin-top: 2em;
+            color: #2178ad;
+        }
+        .product-description {
+            color: #777;
+            font-size: 0.9em;
+        }
+        .product-description, h3, p {
+            text-align: center;
+        }
+        .footer {
+            background-color: #c56e1ddb;
+            color: #f4ebeb;
+            padding: 1em 0;
+        }
+        .modal-content {
+            border-radius: 0;
+        }
+        .btn-primary {
+            background-color: #2178ad;
+            border: none;
+        }
+        
+        /* Neumorphism Signin CSS */
+        * {
+            box-sizing: border-box;
+        }
+        body.modal-open {
+            overflow: hidden;
+        }
+        .neumorphism-signin {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            color: #555;
+            background: #ecf0f3;
+        }
+        .gfg-div {
+            width: 430px;
+            height: 500px;
+            padding: 20px 35px 15px 35px;
+            border-radius: 35px;
+            background: #ecf0f3;
+            box-shadow: -6px -6px 6px rgba(255, 255, 255, 0.8), 6px 6px 6px rgba(0, 0, 0, 0.2);
+        }
+        .gfg-logo {
+            background: url("gfg-logo.png");
+            background-size: cover;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto;
+            box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaaf, -8px -8px 15px #ffffff;
+        }
+        .gfg-title {
+            text-align: center;
+            font-size: 28px;
+            padding-top: 24px;
+            letter-spacing: 0.5px;
+            color: #e17527;
+        }
+        .gfg-sub-title {
+            text-align: center;
+            font-size: 15px;
+            padding-top: 7px;
+            letter-spacing: 3px;
+            color: #e17527;
+        }
+        .gfg-input-fields {
+            width: 100%;
+            padding: 20px 5px 10px 5px;
+        }
+        .gfg-input-fields input {
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 18px;
+            color: #555;
+            padding: 15px 10px 15px 5px;
+        }
+        .gfg-email, .gfg-password {
+            margin-bottom: 20px;
+            border-radius: 20px;
+            box-shadow: inset 5px 5px 5px #cbced1, inset -5px -5px 5px #ffffff;
+        }
+        .gfg-input-fields svg {
+            height: 22px;
+            margin: 0 10px -3px 25px;
+        }
+        .gfg-button {
+            outline: none;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            height: 60px;
+            border-radius: 25px;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: "Lato", sans-serif;
+            color: #fff;
+            text-align: center;
+            background: #e17527;
+            box-shadow: 7px 7px 8px #cbced1, -7px -7px 8px #ffffff;
+            transition: 0.5s;
+        }
+        .gfg-button:hover {
+            background: #e17527;
+        }
+        .gfg-button:active {
+            background: #e17527;
+        }
+        .gfg-link {
+            padding-top: 20px;
+            text-align: center;
+        }
+        .gfg-link a {
+            text-decoration: none;
+            color: #aaa;
+            font-size: 15px;
+            transition: 0.5s;
+        }
+        .gfg-link a:hover {
+            text-decoration: none;
+            color: #e17527;
+            font-size: 15px;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">E-Commerce</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,7 +176,7 @@
                 <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
                 <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html" data-toggle="modal" data-target="#loginModal">Login</a></li>
             </ul>
         </div>
     </nav>
@@ -29,7 +184,7 @@
     <!-- Header -->
     <header class="jumbotron text-center">
         <img src="spices 2.jpg" class="img-fluid" alt="Header Photo">
-        <h1>Welcome to our Herbal Spice Store</h1>
+        <h1>Welcome to Our Organic Spice Store</h1>
         <p>Discover the best products at unbeatable prices.</p>
     </header>
     
@@ -44,47 +199,73 @@
                 <p>Rs.120/100g</p>
             </div>
             <div class="col-md-4">
-                <img src="red chilli.jpg" class="img-fluid" alt="Red  Chilli Powder">
+                <img src="red chilli.jpg" class="img-fluid" alt="Red Chilli Powder">
                 <div class="product-description">Handmade, chemical-free with no preservatives.</div>
                 <h3>Red Chilli Powder</h3>
                 <p>Rs.50/100g</p>
             </div>
             <div class="col-md-4">
-                <img src="amchur.jpg" class="img-fluid" alt="Amchur Powder">
+                <img src="coriander.jpg" class="img-fluid" alt="Coriander Powder">
                 <div class="product-description">Handmade, chemical-free with no preservatives.</div>
-                <h3>Amchur Powder</h3>
+                <h3>Coriander Powder</h3>
                 <p>Rs.40/100g</p>
             </div>
         </div>
     </div>
     
     <!-- Footer -->
-    <footer class="text-center py-4">
-        <p>&copy; 2024 E-Commerce. All rights reserved.</p>
+    <footer class="footer text-center">
+        <p>&copy; 2023 SSAR Spices. All rights reserved.</p>
     </footer>
     
-    <!-- Login Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <!-- Neumorphism Signin Modal -->
+    <div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter email">
+            <div class="modal-content neumorphism-signin">
+                <div class="gfg-div">
+                    <div class="gfg-logo"></div>
+                    <div class="gfg-title">SSAR SPICES</div>
+                    <div class="gfg-sub-title">Login Form</div>
+                    <div class="gfg-input-fields">
+                        <div class="gfg-email">
+                            <svg fill="#999" viewBox="0 0 1024 1024">
+                                <path class="path1"
+                                    d="M896 307.2h-819.2c-42.347 0-76.8 34.453-76.8 76.8v460.8c0
+                                        42.349 34.453 76.8 76.8 76.8h819.2c42.349 0 76.8-34.451
+                                        76.8-76.8v-460.8c0-42.347-34.451-76.8-76.8-76.8zM896
+                                        358.4c1.514 0 2.99 0.158 4.434 0.411l-385.632 257.090c-14.862
+                                        9.907-41.938 9.907-56.802 0l-385.634-257.090c1.443-0.253
+                                        2.92-0.411 4.434-0.411h819.2zM896 870.4h-819.2c-14.115
+                                        0-25.6-11.485-25.6-25.6v-438.566l378.4 252.267c15.925
+                                        10.618 36.363 15.925 56.8 15.925s40.877-5.307
+                                        56.802-15.925l378.398-252.267v438.566c0 14.115-11.485
+                                        25.6-25.6 25.6z">
+                                </path>
+                            </svg>
+                            <input type="email" placeholder="email" />
                         </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        <div class="gfg-password">
+                            <svg fill="#999" viewBox="0 0 1024 1024">
+                                <path class="path1"
+                                    d="M742.4 409.6h-25.6v-76.8c0-127.043-103.
+                                        357-230.4-230.4s-230.4 103.357-230.4
+                                        230.4v76.8h-25.6c-42.347 0-76.8 34.453-76.8
+                                        76.8v409.6c0 42.347 34.453 76.8 76.8 76.8h512c42.347
+                                        0 76.8-34.453 76.8-76.8v-409.6c0-42.347-34.453-76.
+                                        8-76.8-76.8zM307.2 332.8c0-98.811 80.389-179.2
+                                        179.2-179.2s179.2 80.389 179.2 179.2v76.8h-358.4v-76.8zM768 
+                                        896c0 14.115-11.485 25.6-25.6 25.6h-512c-14.115 0-25.6-11.
+                                        485-25.6-25.6v-409.6c0-14.115 11.485-25.6 25.6-25.6h512c14.
+                                        115 0 25.6 11.485 25.6 25.6v409.6z">
+                                </path>
+                            </svg>
+                            <input type="password" placeholder="password" />
                         </div>
-                        <button type="submit" class="btn btn-primary">Login</button>
-                    </form>
+                    </div>
+                    <button class="gfg-button">Signin</button>
+                    <div class="gfg-link">
+                        <a href="#"> Forgot password?</a> or <a href="#">Signup</a>
+                    </div>
                 </div>
             </div>
         </div>
